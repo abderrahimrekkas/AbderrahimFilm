@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Trending from "./Pages/Trending";
 import Movies from "./Pages/Movies";
 import TV from "./Pages/TV";
-import Search from "./Pages/Search";
+import Search from "./Pages/Search"
 import Error from "./Pages/Error";
 import InfoCard from "./Pages/Info";
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Header />
+        
       <Routes>
           <Route path="/" element={<Trending />} exact />
           <Route path="/movies" element={<Movies />} />

@@ -11,7 +11,7 @@ const AppProvider = ({ children, media_type, id }) => {
       `https://api.themoviedb.org/3/${media_type}/${id}?api_key=3d820eab8fd533d2fd7e1514e86292ea&language=en-US`
     );
     const DataJ = await Data.json();
-    // console.log(values);
+    
     setData(DataJ.adult);
   };
 
@@ -28,15 +28,21 @@ const AppProvider = ({ children, media_type, id }) => {
     fetchData();
     fetchVideo();
   }, []);
-
-  // console.log(video);
   return (
     <AppContext.Provider value={{ video }}>{children}</AppContext.Provider>
   );
 };
-//Global Custom Hook
-// const useGlobalContext = () => {
-//   return useContext(AppContext);
-// };
+
 
 export { AppContext, AppProvider };
+
+
+
+
+
+
+
+
+
+
+

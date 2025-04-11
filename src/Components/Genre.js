@@ -25,7 +25,7 @@ const Genre = ({ genre, setGenre, setPage, type, value, setValue }: GenreProps) 
 
   useEffect(() => {
     fetchGenre();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
   }, []);
 
   const CategoryAdd = (genres: GenreType) => {
